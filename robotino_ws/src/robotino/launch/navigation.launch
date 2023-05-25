@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+
+
+
+
+<!--  UCITAJ MAPU -->
+  <arg name="map_file" default="$(find robotino)/maps/crta0905.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+
+<!-- POKRENI LOKALIZACIJA -->
+  <include file="$(find robotino)/launch/localization.launch" />
+  
+  
+
+
+<!-- POKRENI NAVIGACIJU -->
+ <include file="$(find robotino)/launch/move_base.launch" />
+
+<!-- POKRENI RVIZ -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find robotino)/config/robot.rviz">
+  </node>
+
+</launch>

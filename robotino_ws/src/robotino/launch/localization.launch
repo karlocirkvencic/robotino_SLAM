@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- POKRENI LIDAR  
+<node pkg="urg_node" type="urg_node" name="laser">
+  <rosparam>
+      ip_address: 192.168.0.10
+  </rosparam>
+</node>
+-->
+
+
+<!--- LIDAR TRANSFORM 
+<node pkg="tf" type="static_transform_publisher" name="base_link_laser_broadcaster" args="0.08 0 0.34 0 0 0 base_footprint laser 100" />
+ -->
+
+<!--- POKRENI TELEOP 
+<node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard" name="tipkovnica" launch-prefix="xterm -e">
+</node>
+-->
+
+
+<!-- UCITAJ MAPU 
+<arg name="map_file" default="$(find robotino)/maps/crta0905.yaml"/>
+<node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)" />
+
+-->
+
+
+<!-- POKRENI AMCL -->
+<!-- POKRENI LOKALIZACIJA -->
+  <include file="$(find robotino)/launch/amcl.launch" />
+
+
+
+<!-- POKRENI RVIZ 
+<node pkg="rviz" type="rviz" name="rviz"></node>
+-->
+
+</launch>
