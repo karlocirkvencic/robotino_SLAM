@@ -5,7 +5,7 @@
 
 
 <!--  UCITAJ MAPU -->
-  <arg name="map_file" default="$(find robotino)/maps/crta136.yaml"/>
+  <arg name="map_file" default="$(find robotino)/maps/crta.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
 
