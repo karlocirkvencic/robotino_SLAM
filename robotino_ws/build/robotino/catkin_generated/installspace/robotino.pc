@@ -1,8 +1,0 @@
-prefix=/home/wcr-pc/robotino_ws/install
-
-Name: robotino
-Description: Description of robotino
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
