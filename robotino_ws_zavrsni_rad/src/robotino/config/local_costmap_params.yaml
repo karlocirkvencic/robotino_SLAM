@@ -1,0 +1,16 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 5.0
+  publish_frequency: 1.0 #mijenjano
+  static_map: false
+  rolling_window: true
+  width: 6.0
+  height: 6.0
+  resolution: 0.1
+  width: 4.0
+  height: 4.0
+  
+  plugins:
+  - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+  - {name: inflation,                 type: "costmap_2d::InflationLayer"}

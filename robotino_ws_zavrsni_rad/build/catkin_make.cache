@@ -1,0 +1,2 @@
+robotino
+-DCATKIN_DEVEL_PREFIX=/home/wcr-pc/robotino_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wcr-pc/robotino_ws/install -G Unix Makefiles
