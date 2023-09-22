@@ -1,2 +1,0 @@
-joy:ps4-ros:robotino/robotino_description:robotino/robotino_msgs:robotino/robotino_node:teleop_twist_keyboard
--DCATKIN_DEVEL_PREFIX=/home/robotino/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robotino/catkin_ws/install -G Unix Makefiles
