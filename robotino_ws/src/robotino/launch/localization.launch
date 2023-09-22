@@ -23,8 +23,8 @@
 <!-- UCITAJ MAPU 
 <arg name="map_file" default="$(find robotino)/maps/crta0905.yaml"/>
 <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)" />
-
 -->
+
 
 
 <!-- POKRENI AMCL -->
@@ -35,6 +35,6 @@
 
 <!-- POKRENI RVIZ 
 <node pkg="rviz" type="rviz" name="rviz"></node>
--->
 
+-->
 </launch>
